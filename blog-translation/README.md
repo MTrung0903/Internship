@@ -1,37 +1,47 @@
+# BLOG TRANSLATION
+
 # Xây dựng trợ lý AI đa phương thức với Amazon Nova và Amazon Bedrock Data Automation
 
-> **📖 Bài viết gốc**: [Build an agentic multimodal AI assistant with Amazon Nova and Amazon Bedrock Data Automation](https://aws.amazon.com/blogs/artificial-intelligence/build-agentic-multimodal-ai-assistant-amazon-nova-bedrock-data-automation/)  
-> **👤 Tác giả**: Julia Hu, Jessie-Lee Fry, Rui Cardoso  
-> **📅 Ngày xuất bản**: 23/06/2025  
-> **🌐 Nguồn**: AWS Artificial Intelligence Blog  
-> **👨‍💻 Người dịch**: [Hồ Minh Trung] - FCJ Train  
-> **📅 Ngày dịch**: 09/07/2025  
-> **⏱️ Thời gian đọc**: 15 phút  
+> 📖 Bài viết gốc: Build an agentic multimodal AI assistant with Amazon Nova and Amazon Bedrock Data Automation
+> 
+> 
+> **👤 Tác giả**: Julia Hu, Jessie-Lee Fry, Rui Cardoso
+> 
+> **📅 Ngày xuất bản**: 23/06/2025
+> 
+> **🌐 Nguồn**: AWS Artificial Intelligence Blog
+> 
+> **👨‍💻 Người dịch**: [Hồ Minh Trung] - FCJ Train
+> 
+> **📅 Ngày dịch**: 09/07/2025
+> 
+> **⏱️ Thời gian đọc**: 15 phút
+> 
 
 ---
 
 ## 📋 Tóm tắt
 
+**🎯 Đối tượng đọc**: Nhà phát triển AI/ML, kiến trúc sư doanh nghiệp, kỹ sư DevOps
 
+**📊 Độ khó**: Intermediate
 
-**🎯 Đối tượng đọc**: Nhà phát triển AI/ML, kiến trúc sư doanh nghiệp, kỹ sư DevOps  
-**📊 Độ khó**: Intermediate  
 **🏷️ Tags**: Generative AI
 
 ---
 
 ## 📚 Mục lục
 
-- [Phần 1: Giới thiệu](#phần-1-giới-thiệu)
-- [Phần 2: Tổng quan về quy trình Agentic](#phần-2-tổng-quan-về-quy-trình-agentic)
-- [Phần 3: Tổng quan giải pháp](#phần-3-tổng-quan-giải-pháp)
-- [Phần 4: Ví dụ về luồng công việc hợp tác đa công cụ](#phần-4-ví-dụ-về-quy-trình-multi-tool-collaboration)
-- [Phần 5: Lợi ích của việc sử dụng Amazon Bedrock cho luồng công việc agentic AI tạo sinh có khả năng mở rộng](#phần-5-lợi-ích-của-amazon-bedrock)
-- [Phần 6: Các cân nhắc và tùy chỉnh](#phần-6-các-cân-nhắc-và-tùy-chỉnh)
-- [Phần 7: Ứng dụng trong các ngành](#phần-7-ứng-dụng-trong-các-ngành)
-- [Kết luận](#kết-luận)
-- [Glossary - Thuật ngữ](#glossary---thuật-ngữ)
-- [Tài liệu tham khảo](#tài-liệu-tham-khảo)
+- [Phần 1: Giới thiệu](about:blank#ph%E1%BA%A7n-1-gi%E1%BB%9Bi-thi%E1%BB%87u)
+- [Phần 2: Tổng quan về quy trình Agentic](about:blank#ph%E1%BA%A7n-2-t%E1%BB%95ng-quan-v%E1%BB%81-quy-tr%C3%ACnh-agentic)
+- [Phần 3: Tổng quan giải pháp](about:blank#ph%E1%BA%A7n-3-t%E1%BB%95ng-quan-gi%E1%BA%A3i-ph%C3%A1p)
+- [Phần 4: Ví dụ về luồng công việc hợp tác đa công cụ](about:blank#ph%E1%BA%A7n-4-v%C3%AD-d%E1%BB%A5-v%E1%BB%81-quy-tr%C3%ACnh-multi-tool-collaboration)
+- [Phần 5: Lợi ích của việc sử dụng Amazon Bedrock cho luồng công việc agentic AI tạo sinh có khả năng mở rộng](about:blank#ph%E1%BA%A7n-5-l%E1%BB%A3i-%C3%ADch-c%E1%BB%A7a-amazon-bedrock)
+- [Phần 6: Các cân nhắc và tùy chỉnh](about:blank#ph%E1%BA%A7n-6-c%C3%A1c-c%C3%A2n-nh%E1%BA%AFc-v%C3%A0-t%C3%B9y-ch%E1%BB%89nh)
+- [Phần 7: Ứng dụng trong các ngành](about:blank#ph%E1%BA%A7n-7-%E1%BB%A9ng-d%E1%BB%A5ng-trong-c%C3%A1c-ng%C3%A0nh)
+- [Kết luận](about:blank#k%E1%BA%BFt-lu%E1%BA%ADn)
+- [Glossary - Thuật ngữ](about:blank#glossary---thu%E1%BA%ADt-ng%E1%BB%AF)
+- [Tài liệu tham khảo](about:blank#t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o)
 
 ---
 
@@ -50,7 +60,7 @@ Cốt lõi của mô hình agentic bao gồm các giai đoạn sau:
 - **Lý luận (Reason)** – Agent (thường là một LLM) xem xét yêu cầu của người dùng và bối cảnh hoặc trạng thái hiện tại. Nó quyết định bước tiếp theo là gì – có thể là cung cấp câu trả lời trực tiếp hoặc gọi một công cụ hay tác vụ phụ để thu thập thêm thông tin.
 - **Hành động (Act)** – Agent thực hiện bước đó. Điều này có thể là gọi một công cụ hoặc hàm, chẳng hạn như truy vấn tìm kiếm, tra cứu cơ sở dữ liệu, hoặc phân tích tài liệu bằng Amazon Bedrock Data Automation.
 - **Quan sát (Observe)** – Agent quan sát kết quả của hành động. Ví dụ, nó đọc văn bản hoặc dữ liệu được trả về từ công cụ.
-4. **Lặp lại (Loop)** – Với thông tin mới, agent tiếp tục lý luận, quyết định xem nhiệm vụ đã hoàn thành hay cần thêm một bước nữa. Vòng lặp này tiếp tục cho đến khi agent xác định có thể đưa ra câu trả lời cuối cùng cho người dùng.
+1. **Lặp lại (Loop)** – Với thông tin mới, agent tiếp tục lý luận, quyết định xem nhiệm vụ đã hoàn thành hay cần thêm một bước nữa. Vòng lặp này tiếp tục cho đến khi agent xác định có thể đưa ra câu trả lời cuối cùng cho người dùng.
 
 Quy trình ra quyết định lặp lại này cho phép agent xử lý các yêu cầu phức tạp mà không thể hoàn thành chỉ với một lệnh duy nhất. Tuy nhiên, việc triển khai các hệ thống agentic có thể gặp thách thức. Chúng làm tăng độ phức tạp trong luồng điều khiển, và các agent đơn giản có thể kém hiệu quả (gọi quá nhiều công cụ hoặc lặp lại không cần thiết) hoặc khó quản lý khi mở rộng quy mô. Đây là lúc các khung công tác có cấu trúc như LangGraph phát huy tác dụng. LangGraph cho phép định nghĩa một đồ thị có hướng (directed graph) hoặc máy trạng thái (state machine) của các hành động tiềm năng với các node được xác định rõ ràng (các hành động như “Report Writer” hoặc “Query Knowledge Base”) và các cạnh (các chuyển tiếp được phép). Mặc dù lý luận nội bộ của agent vẫn quyết định con đường nào sẽ đi,LangGraph đảm bảo quy trình vẫn dễ quản lý và minh bạch. Sự linh hoạt được kiểm soát này mang lại cho trợ lý đủ quyền tự chủ để xử lý các nhiệm vụ đa dạng, đồng thời đảm bảo luồng công việc tổng thể ổn định và có thể dự đoán.
 
@@ -71,83 +81,104 @@ Luồng công việc bao gồm các thành phần chính sau:
 
 Các thành phần này được điều phối trong một luồng công việc agentic. Thay vì một kịch bản cố định, giải pháp sử dụng một đồ thị quyết định động (dynamic decision graph) được triển khai với thư viện mã nguồn mở **LangGraph** trong giải pháp notebook để định tuyến giữa các bước. Kết quả là một trợ lý cảm giác ít giống một chatbot và giống hơn một nhà phân tích hợp tác – một trợ lý có thể phân tích bản ghi âm cuộc gọi báo cáo thu nhập, phê bình bộ slide hoặc soạn thảo bản ghi nhớ nhà đầu tư với sự can thiệp tối thiểu từ con người.
 
-Sơ đồ sau đây cho thấy kiến trúc cấp cao của luồng công việc AI agentic. **Amazon Nova** điều phối các công cụ khác nhau – bao gồm **Amazon Bedrock Data Automation** để xử lý tài liệu và hình ảnh, và cơ sở tri thức để truy xuất – nhằm đáp ứng các yêu cầu phức tạp của người dùng. Để ngắn gọn, chúng tôi không liệt kê toàn bộ mã tại đây; [GitHub repo](https://github.com/aws-samples/amazon-nova-samples/tree/main/multimodal-understanding/repeatable-patterns/16-multimodal-agentic-workflow) bao gồm một ví dụ hoạt động đầy đủ. Các nhà phát triển có thể chạy ví dụ đó để xem agent hoạt động và mở rộng nó với dữ liệu của riêng họ.
-![image.png](attachment:00a6e137-9685-4b92-bb15-4ebd40487c23:image.png)
----
+Sơ đồ sau đây cho thấy kiến trúc cấp cao của luồng công việc AI agentic.
+
+**Amazon Nova**
+
+điều phối các công cụ khác nhau – bao gồm
+
+**Amazon Bedrock Data Automation**
+
+để xử lý tài liệu và hình ảnh, và cơ sở tri thức để truy xuất – nhằm đáp ứng các yêu cầu phức tạp của người dùng. Để ngắn gọn, chúng tôi không liệt kê toàn bộ mã tại đây;
+
+[GitHub repo](https://github.com/aws-samples/amazon-nova-samples/tree/main/multimodal-understanding/repeatable-patterns/16-multimodal-agentic-workflow)
+
+bao gồm một ví dụ hoạt động đầy đủ. Các nhà phát triển có thể chạy ví dụ đó để xem agent hoạt động và mở rộng nó với dữ liệu của riêng họ.
+
+![image.png](./image/image.png)
+
+—
 
 ## Phần 4: Ví dụ về luồng công việc hợp tác đa công cụ
 
 Để minh họa luồng công việc của agent hợp tác đa công cụ, chúng tôi sẽ khám phá một ví dụ về cách một tương tác hỏi-đáp có thể diễn ra trong hệ thống đã triển khai cho việc hợp tác đa công cụ:
 
 - **Lệnh của người dùng** – Trong giao diện trò chuyện (chat UI), người dùng cuối đặt một câu hỏi, chẳng hạn như: “Hiệu suất cổ phiếu của XXX trong năm nay như thế nào, và nó so sánh ra sao với các công ty cùng ngành rideshare?”
-
 - **Phản hồi ban đầu của agent** – Agent (bộ điều phối **Amazon Nova FM**) nhận câu hỏi và phản hồi với:
-      Received your question. Routing to the reasoning engine…
-> 
-
+Received your question. Routing to the reasoning engine…
+>
 - **Lập kế hoạch và lựa chọn công cụ** – Agent xác định rằng nó cần các thông tin sau:
-
-   - Mã chứng khoán (ticker symbol) của công ty (XXX)
-   - Giá cổ phiếu theo thời gian thực và biến động từ đầu năm (YTD)
-   - Các chỉ số tài chính chính (doanh thu, thu nhập ròng, tỷ lệ giá trên thu nhập - price-earnings ratio)
-   - Các điểm chuẩn ngành (hiệu suất YTD của các công ty cùng ngành, mức tăng trưởng doanh thu trung bình)
-
+    - Mã chứng khoán (ticker symbol) của công ty (XXX)
+    - Giá cổ phiếu theo thời gian thực và biến động từ đầu năm (YTD)
+    - Các chỉ số tài chính chính (doanh thu, thu nhập ròng, tỷ lệ giá trên thu nhập - price-earnings ratio)
+    - Các điểm chuẩn ngành (hiệu suất YTD của các công ty cùng ngành, mức tăng trưởng doanh thu trung bình)
 - **Thực thi kế hoạch bằng cách gọi công cụ** – Agent gọi các công cụ để thực hiện các hành động sau:
-
-   - **Tra cứu mã chứng khoán**:
-         Agent → WebSearchTool.lookupTicker("XXX Inc")
-         WebSearchTool → Agent: returns "XXX"
-   - **Lấy dữ liệu hiệu suất cổ phiếu theo thời gian thực bằng mã chứng khoán đã truy xuất**:
-         Agent → StockAnalysisTool.getPerformance(
-         symbol="XXX",
-         period="YTD"
-         )
-         StockAnalysisTool → Agent:
-         {
-         currentPrice: 
-         ytdChange: 
-         52wkRange: 
-         volume: 
-         }
-        
-   - **Truy xuất các chỉ số tài chính của công ty bằng mã chứng khoán đã truy xuất**:
-         Agent → CompanyFinancialAnalysisTool.getMetrics("UBER")
-         CompanyFinancialAnalysisTool → Agent:
-         {
-         revenueQ4_2024: xxx B,
-         netIncomeQ4_2024: xxx M,
-         peRatio: xxx
-         }
-        
-   - **Thu thập dữ liệu điểm chuẩn ngành bằng mã chứng khoán đã truy xuất**:
-         Agent → IndustryAnalysisTool.comparePeers(
-         symbol="XXX",
-         sector="Rideshare"
-         )
-         IndustryAnalysisTool → Agent:
-         {
-         avgPeerYTD:
-         avgRevenueGrowth: 
-         }
-        
-
-**Vòng lặp xác thực** – Agent thực hiện một vòng lặp xác thực:
-
+    - **Tra cứu mã chứng khoán**:
+    Agent → WebSearchTool.lookupTicker(“XXX Inc”)
+    WebSearchTool → Agent: returns “XXX”
+    - **Lấy dữ liệu hiệu suất cổ phiếu theo thời gian thực bằng mã chứng khoán đã truy xuất**:
+    
+    ```
+    Agent → StockAnalysisTool.getPerformance(
+    symbol=“XXX”,
+    period=“YTD”
+    )
+    StockAnalysisTool → Agent:
+    {
+    currentPrice:
+    ytdChange:
+    52wkRange:
+    volume:
+    }
+    ```
+    
+    - **Truy xuất các chỉ số tài chính của công ty bằng mã chứng khoán đã truy xuất**:
+    
+    ```
+    Agent → CompanyFinancialAnalysisTool.getMetrics(“UBER”)
+    CompanyFinancialAnalysisTool → Agent:
+    {
+    revenueQ4_2024: xxx B,
+    netIncomeQ4_2024: xxx M,
+    peRatio: xxx
+    }
+    ```
+    
+    - **Thu thập dữ liệu điểm chuẩn ngành bằng mã chứng khoán đã truy xuất**
+    
+    ```
+    Agent → IndustryAnalysisTool.comparePeers(
+    symbol=“XXX”,
+    sector=“Rideshare”
+    )
+    IndustryAnalysisTool → Agent:
+    {
+    avgPeerYTD:
+    avgRevenueGrowth:
+    }
+    ```
+    
+    **Vòng lặp xác thực** – Agent thực hiện một vòng lặp xác thực:
+    
+    ```
       Agent: validate()
       ↳ Are all four data points present?
-      • Ticker :heavy_check_mark: 
-      • Stock performance :heavy_check_mark: 
-      • Financial metrics :heavy_check_mark: 
-      • Industry benchmark :heavy_check_mark: 
+      • Ticker :heavy_check_mark:
+      • Stock performance :heavy_check_mark:
+      • Financial metrics :heavy_check_mark:
+      • Industry benchmark :heavy_check_mark:
       ↳ All set—no retry needed.
-
+    ```
+    
 - Nếu thiếu bất kỳ dữ liệu nào hoặc công cụ gặp lỗi, bộ điều phối FM sẽ kích hoạt trình xử lý lỗi (thử lại tối đa ba lần), sau đó tiếp tục kế hoạch tại bước bị lỗi.
 
 **Tổng hợp và câu trả lời cuối cùng** – Agent sử dụng Amazon Nova Pro để tổng hợp các điểm dữ liệu và tạo ra câu trả lời cuối cùng dựa trên các điểm dữ liệu này.
 
 Hình dưới đây cho thấy sơ đồ luồng của agent hợp tác đa công cụ này.
-![image.png](attachment:b1a4bd8a-4ff8-4f19-b736-0daef7c5e9c9:image.png)
----
+
+![image.png](./image/image%201.png)
+
+—
 
 ## Phần 5: Lợi ích của việc sử dụng Amazon Bedrock cho luồng công việc agentic AI tạo sinh có khả năng mở rộng
 
@@ -163,6 +194,7 @@ Giải pháp này được xây dựng trên Amazon Bedrock bởi vì AWS cung c
 ---
 
 ## Phần 6: Các cân nhắc và tùy chỉnh
+
 Kiến trúc này thể hiện sự linh hoạt vượt trội thông qua các nguyên tắc thiết kế mô-đun. Ở cốt lõi, hệ thống sử dụng các mô hình Amazon Nova FMs, có thể được chọn dựa trên độ phức tạp của nhiệm vụ. Amazon Nova Micro xử lý các nhiệm vụ đơn giản như phân loại với độ trễ tối thiểu. Amazon Nova Lite quản lý các hoạt động có độ phức tạp trung bình với hiệu suất cân bằng, còn Amazon Nova Pro vượt trội trong các nhiệm vụ phức tạp đòi hỏi suy luận nâng cao hoặc tạo ra các phản hồi toàn diện.
 
 Tính chất mô-đun của giải pháp (Amazon Nova, công cụ, cơ sở tri thức, và Amazon Bedrock Data Automation) cho phép thay thế hoặc điều chỉnh từng thành phần mà không cần đại tu toàn bộ hệ thống. Các kiến trúc sư giải pháp có thể sử dụng kiến trúc tham chiếu này làm nền tảng, thực hiện các tùy chỉnh theo nhu cầu. Bạn có thể tích hợp liền mạch các khả năng mới thông qua các hàm [AWS Lambda](http://aws.amazon.com/lambda) cho các hoạt động chuyên biệt, và việc điều phối LangGraph cho phép lựa chọn mô hình động và logic định tuyến phức tạp. Cách tiếp cận kiến trúc này đảm bảo hệ thống có thể phát triển một cách tự nhiên trong khi duy trì hiệu quả vận hành và tiết kiệm chi phí.
@@ -210,7 +242,7 @@ Jessie-Lee Fry là một giám đốc điều hành Chiến lược Sản phẩm
 ## 📖 Glossary - Thuật ngữ
 
 | English | Tiếng Việt | Định nghĩa |
-|---------|------------|------------|
+| --- | --- | --- |
 | Multimodal AI | AI đa phương thức | AI có khả năng xử lý và phân tích nhiều loại dữ liệu như văn bản, hình ảnh, âm thanh và video để tạo ra phản hồi tích hợp. |
 | Agentic Workflow | Quy trình tác nhân | Quy trình AI tự động thực hiện các bước lý luận, hành động, quan sát và lặp lại để hoàn thành các nhiệm vụ phức tạp một cách chủ động. |
 | Retrieval Augmented Generation (RAG) | Tạo sinh dựa trên truy xuất | Kỹ thuật kết hợp truy xuất dữ liệu từ cơ sở tri thức với khả năng tạo sinh của AI để đảm bảo câu trả lời chính xác và dựa trên dữ liệu thực. |
@@ -229,44 +261,51 @@ Jessie-Lee Fry là một giám đốc điều hành Chiến lược Sản phẩm
 | Amazon Nova Canvas | Amazon Nova Canvas | Một tính năng hoặc khái niệm ẩn dụ của Amazon Nova để tạo nội dung có cấu trúc, như báo cáo hoặc mẫu định dạng đầu ra. |
 | Supervisor Agent | Tác nhân giám sát | Tác nhân chính trong quy trình đa tác nhân, chịu trách nhiệm điều phối và tổng hợp kết quả từ các tác nhân chuyên biệt. |
 | Few-shot Prompting | Gợi ý vài lần | Kỹ thuật cung cấp một số ví dụ trong lời nhắc để hướng dẫn mô hình AI tạo ra kết quả theo định dạng mong muốn. |
+
 ---
 
 ## 🔗 Tài liệu tham khảo
 
 ### Tài liệu gốc
-- [Original Article](https://aws.amazon.com/blogs/artificial-intelligence/build-agentic-multimodal-ai-assistant/)  
-- [AWS Artificial Intelligence Blog](https://aws.amazon.com/blogs/ai/)  
-- [AWS Documentation VN](https://aws.amazon.com/vi/)  
-- [AWS Vietnam Community](https://aws.amazon.com/community/)  
+
+- [Original Article](https://aws.amazon.com/vi/blogs/machine-learning/build-an-agentic-multimodal-ai-assistant-with-amazon-nova-and-amazon-bedrock-data-automation/)
+- [AWS Artificial Intelligence Blog](https://aws.amazon.com/blogs/ai/)
+- [AWS Documentation VN](https://aws.amazon.com/vi/)
+- [AWS Vietnam Community](https://aws.amazon.com/community/)
 
 ### Tools và Services
-- [Amazon Nova](https://aws.amazon.com/nova/): Mô hình ngôn ngữ đa phương thức.  
-- [Amazon Bedrock](https://aws.amazon.com/): Nền tảng AI tạo sinh.  
-- [LangGraph](https://github.com/langgraph): Framework điều phối quy trình AI.  
+
+- [Amazon Nova](https://aws.amazon.com/nova/): Mô hình ngôn ngữ đa phương thức.
+- [Amazon Bedrock](https://aws.amazon.com/): Nền tảng AI tạo sinh.
+- [LangGraph](https://github.com/langgraph): Framework điều phối quy trình AI.
 
 ---
 
 ## 💬 Ghi chú của người dịch
 
 ### Challenges trong quá trình dịch
-- **Technical Terms**: Các thuật ngữ như “agentic workflow” hoặc “multimodal RAG” chưa phổ biến trong tiếng Việt, cần giải thích rõ ràng và nhất quán.  
-- **Cultural Context**: Ví dụ về ngành rideshare (XXX) được giữ nguyên do không có tương đương trực tiếp tại Việt Nam.  
+
+- **Technical Terms**: Các thuật ngữ như “agentic workflow” hoặc “multimodal RAG” chưa phổ biến trong tiếng Việt, cần giải thích rõ ràng và nhất quán.
+- **Cultural Context**: Ví dụ về ngành rideshare (XXX) được giữ nguyên do không có tương đương trực tiếp tại Việt Nam.
 - **Complex Concepts**: Quy trình agentic và LangGraph đòi hỏi nghiên cứu sâu để diễn giải chính xác.
 
 ### Insights gained
-- **Technical Learning**: Hiểu hiểu sâu hơn về AI đa phương thức và quy trình agentic.  
-- **Language Skills**: Cải thiện kỹ năng dịch thuật kỹ thuật, đặc biệt trong việc giữ giọng văn tự nhiên.  
+
+- **Technical Learning**: Hiểu hiểu sâu hơn về AI đa phương thức và quy trình agentic.
+- **Language Skills**: Cải thiện kỹ năng dịch thuật kỹ thuật, đặc biệt trong việc giữ giọng văn tự nhiên.
 - **Industry Knowledge**: Nắm bắt xu hướng ứng dụng AI trong tài chính, y tế, sản xuất.
 
 ---
 
 ## 🤝 Đóng góp và Feedback
 
-Bài dịch được thực hiện trong khuôn khổ **FCJ Internship Program**. 
+Bài dịch được thực hiện trong khuôn khổ **FCJ Internship Program**.
 
-**📧 Liên hệ**: [trungho.234416@gmail.com]  
-**💬 Feedback**: Mọi góp ý xin gửi về email trên.  
-**🔄 Updates**: Bài dịch sẽ được cập nhật dựa trên phản hồi cộng đồng.  
+**📧 Liên hệ**: [trungho.234416@gmail.com]
+
+**💬 Feedback**: Mọi góp ý xin gửi về email trên.
+
+**🔄 Updates**: Bài dịch sẽ được cập nhật dựa trên phản hồi cộng đồng.
 
 ---
 

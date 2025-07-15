@@ -4,7 +4,7 @@
 - **Tuần**: Tuần 1/12
 - **Thời gian**: 15/04/2025 - 20/04/2025
 - **Trạng thái**: Hoàn thành Module 01, bắt đầu Module 02
-- **Mood tổng thể**: 😊 (Tích cực và hào hứng)
+- **Mood tổng thể**: 😊 
 
 ## 🎯 Mục tiêu tuần đã đạt được
 
@@ -106,10 +106,6 @@
 - **Application**: Áp dụng kiến thức trong thực hành lab
 - **Retention**: Ghi chú chi tiết giúp ôn tập hiệu quả
 
-### Collaboration: 5/10
-- **Interactions**: Chưa có nhiều tương tác với mentor hoặc team
-- **Contributions**: Chưa có đóng góp cụ thể cho team
-- **Areas for Growth**: Tăng cường tương tác và chia sẻ kiến thức
 
 ### Overall Satisfaction: 8.5/10
 - **Highlights**: 
@@ -137,22 +133,6 @@
 - [ ] Chia sẻ kiến thức và kinh nghiệm học tập
 - [ ] Cải thiện kỹ năng ghi chú và tổ chức thông tin
 
-## 📈 Metrics & Progress
-
-### Module Completion
-- **Module 01**: 100% ✅
-- **Module 02**: 25% (đang thực hiện)
-- **Overall Progress**: 12.5% (1/8 modules)
-
-### Lab Completion
-- **Completed**: 9 labs
-- **In Progress**: 0 labs
-- **Remaining**: ~40 labs
-
-### Time Investment
-- **Total Study Time**: ~30-35 hours
-- **Average Daily**: ~5-6 hours
-- **Weekend Study**: 2 days
 
 ## 💭 Key Insights & Lessons Learned
 
@@ -179,7 +159,7 @@
 ### Learning Resources
 - [AWS Study Group](https://www.youtube.com/@AWSStudyGroup)
 - [AWS Documentation](https://docs.aws.amazon.com/)
-- [AWS Architecture Icons](https://aws.amazon.com/vi/architecture/icons/)
+
 
 ### Tools Used
 - AWS Management Console
@@ -201,11 +181,7 @@
 - ✅ Bắt đầu Module 02 với VPC
 - ✅ Tạo sơ đồ kiến trúc đầu tiên
 
-### Personal Growth
-- 📈 Tăng cường kỹ năng tự học
-- 📈 Cải thiện khả năng ghi chú và tổ chức thông tin
-- 📈 Phát triển tư duy kiến trúc hệ thống
-- 📈 Làm quen với môi trường làm việc chuyên nghiệp
+
 
 ---
 
@@ -216,7 +192,7 @@
 
 **🎯 Overall Program Progress:**
 - Tuần 1/12: Hoàn thành ✅
-- Tiến độ tổng thể: 8.33% (1/12 weeks)
+
 
 ---
 *Week Summary created by: Hồ Minh Trung*  

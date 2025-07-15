@@ -1,462 +1,243 @@
-# 📊 Project Proposal Guidelines - FCJ Internship
-
-[![Documentation](https://img.shields.io/badge/Type-Documentation-blue)](https://github.com/AWS-First-Cloud-Journey/Internship)
-[![Weight](https://img.shields.io/badge/Weight-50%25-red)](https://github.com/AWS-First-Cloud-Journey/Internship)
-[![Required](https://img.shields.io/badge/Status-Required-red)](https://github.com/AWS-First-Cloud-Journey/Internship)
-
-## 🎯 Mục đích Project Proposal
-
-Project Proposal là **deliverable quan trọng nhất** (50% tổng điểm) trong chương trình FCJ Internship. Đây không chỉ là bài tập mà là cơ hội để:
-
-- **🏗️ Architecture Design**: Thiết kế giải pháp AWS cho bài toán thực tế
-- **💼 Business Analysis**: Phân tích business case và ROI
-- **📝 Technical Writing**: Phát triển kỹ năng viết kỹ thuật chuyên nghiệp
-- **🎯 Career Preparation**: Chuẩn bị cho việc làm việc với clients và stakeholders
-
----
-
-## ✅ Yêu cầu cơ bản
-
-### Scope và Chủ đề
-- **Focus**: AWS Cloud Solutions cho real-world problems
-- **Industries**: E-commerce, Healthcare, Education, FinTech, Media, etc.
-- **Complexity**: Intermediate level - không quá đơn giản, không quá phức tạp
-- **Innovation**: Có elements sáng tạo và modern practices
-
-### Độ dài và Format
-- **Length**: 15-25 trang (không tính appendices)
-- **Format**: Professional document với diagrams và charts
-- **Language**: Tiếng Việt hoặc tiếng Anh (consistent throughout)
-- **Structure**: 8 phần bắt buộc theo template
-
-### Chất lượng Content
-- **Technical Accuracy**: Thông tin kỹ thuật chính xác
-- **Business Viability**: Giải pháp khả thi về mặt business
-- **Cost Realistic**: Ước tính chi phí realistic và detailed
-- **Implementation Feasible**: Kế hoạch triển khai thực tế
-
----
-
-## 📋 8 Phần bắt buộc của Proposal
-
-### 1. 📄 Executive Summary (10%)
-**Mục đích**: Tóm tắt toàn bộ proposal trong 2-3 trang
-
-**Nội dung bao gồm**:
-- Problem statement ngắn gọn
-- Solution overview với key features
-- Business benefits và ROI summary
-- Investment required và timeline
-- Success metrics và expected outcomes
-
-**Evaluation Criteria**:
-- Clarity và conciseness
-- Compelling business case
-- Accurate summary của main points
-- Executive-level language
-
-### 2. 🎯 Problem Statement (15%)
-**Mục đích**: Định nghĩa rõ ràng vấn đề cần giải quyết
-
-**Nội dung bao gồm**:
-- Current situation analysis
-- Pain points identification với quantified impact
-- Stakeholders affected và their concerns
-- Business consequences của inaction
-- Market opportunity (nếu applicable)
-
-**Evaluation Criteria**:
-- Problem clearly defined và well-researched
-- Quantified impact với data/statistics
-- Stakeholder analysis comprehensive
-- Business case compelling
-
-### 3. 🏗️ Solution Architecture (25%)
-**Mục đích**: Thiết kế kiến trúc kỹ thuật chi tiết
-
-**Nội dung bao gồm**:
-- High-level architecture diagram
-- AWS services selection với justification
-- Component interactions và data flow
-- Security architecture và compliance
-- Scalability và performance considerations
-- Integration points với existing systems
-
-**Evaluation Criteria**:
-- Architecture technically sound
-- AWS services appropriately chosen
-- Security properly addressed
-- Scalability designed in
-- Diagrams clear và professional
-
-### 4. 🔧 Technical Implementation (20%)
-**Mục đích**: Chi tiết cách triển khai kỹ thuật
-
-**Nội dung bao gồm**:
-- Implementation phases với deliverables
-- Technical requirements (compute, storage, network)
-- Development approach và methodologies
-- Testing strategy (unit, integration, performance)
-- Deployment plan và rollback procedures
-- Configuration management
-
-**Evaluation Criteria**:
-- Implementation plan detailed và realistic
-- Technical requirements well-defined
-- Testing strategy comprehensive
-- Deployment approach sound
-- Risk mitigation considered
-
-### 5. 📅 Timeline & Milestones (10%)
-**Mục đích**: Lập kế hoạch thời gian chi tiết
-
-**Nội dung bao gồm**:
-- Project phases breakdown
-- Key milestones với success criteria
-- Dependencies identification
-- Critical path analysis
-- Resource allocation plan
-- Buffer time cho risks
-
-**Evaluation Criteria**:
-- Timeline realistic và achievable
-- Milestones clearly defined
-- Dependencies properly identified
-- Resource allocation logical
-- Contingency planning included
-
-### 6. 💰 Budget Estimation (10%)
-**Mục đích**: Ước tính chi phí chi tiết và chính xác
-
-**Nội dung bao gồm**:
-- AWS infrastructure costs (monthly/annual)
-- Development costs (one-time)
-- Third-party services và licenses
-- Operational costs (ongoing)
-- ROI calculation và break-even analysis
-- Cost optimization strategies
-
-**Evaluation Criteria**:
-- Cost estimates accurate và detailed
-- ROI calculation realistic
-- All cost categories covered
-- Optimization strategies included
-- Business case financially sound
-
-### 7. ⚠️ Risk Assessment (5%)
-**Mục đích**: Xác định và quản lý rủi ro dự án
-
-**Nội dung bao gồm**:
-- Risk identification (technical, business, operational)
-- Impact assessment và probability analysis
-- Risk matrix với prioritization
-- Mitigation strategies cho each risk
-- Contingency plans
-- Monitoring và escalation procedures
-
-**Evaluation Criteria**:
-- Risks comprehensively identified
-- Impact assessment realistic
-- Mitigation strategies practical
-- Contingency plans detailed
-- Risk monitoring planned
-
-### 8. 🎯 Expected Outcomes (5%)
-**Mục đích**: Định nghĩa success và benefits mong đợi
-
-**Nội dung bao gồm**:
-- Success metrics (technical và business)
-- Short-term benefits (0-6 months)
-- Medium-term benefits (6-18 months)
-- Long-term value (18+ months)
-- User experience improvements
-- Strategic capabilities gained
-
-**Evaluation Criteria**:
-- Success metrics measurable
-- Benefits realistic và quantified
-- Timeline for benefits reasonable
-- Strategic value articulated
-- User impact considered
-
----
-
-## 🎨 Template Structure
-
-```markdown
-# [Project Title]
-## [Subtitle describing the solution]
-
----
-
-# Executive Summary
-[2-3 pages summarizing the entire proposal]
-
-# 1. Problem Statement
-## Current Situation
-## Key Challenges
-## Stakeholder Impact
-## Business Consequences
-
-# 2. Solution Architecture
-## Architecture Overview
-## AWS Services Used
-## Component Design
-## Security Architecture
-## Scalability Design
-
-# 3. Technical Implementation
-## Implementation Phases
-## Technical Requirements
-## Development Approach
-## Testing Strategy
-## Deployment Plan
-
-# 4. Timeline & Milestones
-## Project Timeline
-## Key Milestones
-## Dependencies
-## Resource Allocation
-
-# 5. Budget Estimation
-## Infrastructure Costs
-## Development Costs
-## Operational Costs
-## ROI Analysis
-
-# 6. Risk Assessment
-## Risk Matrix
-## Mitigation Strategies
-## Contingency Plans
-
-# 7. Expected Outcomes
-## Success Metrics
-## Business Benefits
-## Technical Improvements
-## Long-term Value
-
----
-
-# Appendices
-## A. Technical Specifications
-## B. Cost Calculations
-## C. Architecture Diagrams
-## D. References
-```
-
----
-
-## 💡 Chọn chủ đề Project
-
-### Recommended Industries
-
-#### 🛒 E-Commerce & Retail
-- **Multi-vendor marketplace** với microservices
-- **Omnichannel retail platform** với inventory management
-- **Personalized recommendation engine** với ML
-- **Supply chain optimization** với IoT và analytics
-
-#### 🏥 Healthcare & Life Sciences
-- **Telemedicine platform** với video conferencing
-- **Electronic Health Records (EHR)** system
-- **Medical imaging processing** với AI/ML
-- **Drug discovery platform** với HPC
-
-#### 🎓 Education & E-Learning
-- **Learning Management System (LMS)** với scalability
-- **Virtual classroom platform** với real-time collaboration
-- **Student performance analytics** với data lake
-- **Content delivery network** cho educational content
-
-#### 💰 FinTech & Banking
-- **Digital banking platform** với security focus
-- **Payment processing system** với fraud detection
-- **Robo-advisor platform** với ML algorithms
-- **Blockchain-based solutions** cho transparency
-
-#### 📱 Media & Entertainment
-- **Video streaming platform** với global CDN
-- **Social media analytics** với big data
-- **Gaming backend infrastructure** với real-time features
-- **Content management system** với AI moderation
-
-#### 🏭 Manufacturing & IoT
-- **Smart factory monitoring** với IoT sensors
-- **Predictive maintenance** với ML models
-- **Supply chain visibility** với blockchain
-- **Quality control automation** với computer vision
-
-### Project Complexity Levels
-
-#### ⭐ Beginner-Friendly (Not Recommended)
-- Simple CRUD applications
-- Basic static websites
-- Single-service solutions
-
-#### ⭐⭐ Intermediate (Recommended)
-- Multi-tier applications với 3-5 AWS services
-- Microservices architecture với API Gateway
-- Data processing pipelines
-- ML-powered applications
-
-#### ⭐⭐⭐ Advanced (For Experienced)
-- Complex distributed systems
-- Multi-region deployments
-- Advanced ML/AI implementations
-- Enterprise-grade solutions
-
----
-
-## 🔧 Tools và Resources
-
-### Architecture Design
-- **Draw.io**: Free diagramming tool
-- **Lucidchart**: Professional diagramming
-- **AWS Architecture Icons**: Official AWS icons
-- **Cloudcraft**: AWS architecture visualization
-
-### Cost Estimation
-- **AWS Pricing Calculator**: Official cost estimation
-- **AWS Cost Explorer**: Historical cost analysis
-- **Infracost**: Infrastructure cost estimation
-- **CloudHealth**: Cost optimization tools
-
-### Documentation
-- **Notion**: All-in-one workspace
-- **Confluence**: Team documentation
-- **GitBook**: Beautiful documentation
-- **Markdown**: Simple formatting
-
-### Research Tools
-- **AWS Case Studies**: Real customer implementations
-- **AWS Whitepapers**: Best practices và patterns
-- **Gartner Reports**: Industry analysis
-- **Stack Overflow**: Technical Q&A
-
----
-
-## 📊 Evaluation Rubric
-
-### Technical Excellence (40%)
-| Criteria | Excellent (90-100%) | Good (80-89%) | Satisfactory (70-79%) | Needs Improvement (<70%) |
-|----------|-------------------|---------------|---------------------|------------------------|
-| **Architecture Design** | Innovative, scalable, secure | Well-designed, follows best practices | Functional, meets requirements | Basic, has significant gaps |
-| **AWS Services Selection** | Optimal choices, well-justified | Good choices, mostly appropriate | Adequate choices, some issues | Poor choices, not justified |
-| **Technical Depth** | Deep understanding evident | Good technical knowledge | Basic understanding | Superficial treatment |
-
-### Business Viability (30%)
-| Criteria | Excellent (90-100%) | Good (80-89%) | Satisfactory (70-79%) | Needs Improvement (<70%) |
-|----------|-------------------|---------------|---------------------|------------------------|
-| **Problem Definition** | Clear, compelling, well-researched | Well-defined, good research | Adequately defined | Vague, poorly researched |
-| **Business Case** | Strong ROI, compelling benefits | Good business case | Adequate justification | Weak business case |
-| **Market Understanding** | Deep market insight | Good market knowledge | Basic understanding | Limited market awareness |
-
-### Implementation Feasibility (20%)
-| Criteria | Excellent (90-100%) | Good (80-89%) | Satisfactory (70-79%) | Needs Improvement (<70%) |
-|----------|-------------------|---------------|---------------------|------------------------|
-| **Timeline** | Realistic, well-planned | Mostly realistic | Somewhat optimistic | Unrealistic |
-| **Resource Planning** | Comprehensive, detailed | Well-planned | Basic planning | Poor planning |
-| **Risk Management** | Thorough risk analysis | Good risk identification | Basic risk assessment | Inadequate risk planning |
-
-### Presentation Quality (10%)
-| Criteria | Excellent (90-100%) | Good (80-89%) | Satisfactory (70-79%) | Needs Improvement (<70%) |
-|----------|-------------------|---------------|---------------------|------------------------|
-| **Writing Quality** | Professional, clear, engaging | Well-written, clear | Adequate writing | Poor writing quality |
-| **Visual Design** | Professional diagrams, charts | Good visuals | Basic visuals | Poor or missing visuals |
-| **Organization** | Logical flow, easy to follow | Well-organized | Adequately organized | Poor organization |
-
----
-
-## 🎯 Success Tips
-
-### 1. Start with Real Problems
-```markdown
-❌ "Build a website for a company"
-✅ "Modernize legacy e-commerce platform to handle 10x traffic growth 
-   during peak seasons while reducing operational costs by 40%"
-```
-
-### 2. Quantify Everything
-```markdown
-❌ "Improve performance"
-✅ "Reduce page load time from 3.2s to <500ms, increase conversion 
-   rate by 25%, handle 50,000 concurrent users"
-```
-
-### 3. Show Your Research
-```markdown
-✅ "According to Gartner 2024 report, 85% of enterprises will adopt 
-   cloud-first strategy by 2025. Current solution costs $50K/month 
-   vs proposed AWS solution at $18K/month (64% reduction)"
-```
-
-### 4. Think Like a Consultant
-- **Client Perspective**: What would a real client care about?
-- **Business Impact**: How does this solve business problems?
-- **Competitive Advantage**: What makes this solution unique?
-- **Scalability**: How does this grow with the business?
-
-### 5. Use Real Data
-- **Market Research**: Industry reports, competitor analysis
-- **AWS Pricing**: Actual pricing from AWS Calculator
-- **Performance Benchmarks**: Real performance metrics
-- **Case Studies**: Similar implementations
-
----
-
-## 📚 Learning Resources
-
-### AWS Architecture
-- [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
-- [AWS Architecture Center](https://aws.amazon.com/architecture/)
-- [AWS Solutions Library](https://aws.amazon.com/solutions/)
-- [AWS Reference Architectures](https://aws.amazon.com/architecture/reference-architecture-diagrams/)
-
-### Business Analysis
-- [Harvard Business Review](https://hbr.org/)
-- [McKinsey Insights](https://www.mckinsey.com/insights)
-- [Gartner Research](https://www.gartner.com/en/research)
-- [Forrester Research](https://www.forrester.com/research/)
-
-### Technical Writing
-- [Google Technical Writing Courses](https://developers.google.com/tech-writing)
-- [AWS Documentation Style Guide](https://docs.aws.amazon.com/style-guide/)
-- [Microsoft Writing Style Guide](https://docs.microsoft.com/en-us/style-guide/)
-
-### Industry Reports
-- [AWS Customer Case Studies](https://aws.amazon.com/solutions/case-studies/)
-- [Cloud Computing Market Reports](https://www.marketsandmarkets.com/Market-Reports/cloud-computing-market-234.html)
-- [Digital Transformation Studies](https://www.idc.com/research/digital-transformation)
-
----
-
-## 🤝 Review Process
-
-### Self-Review Checklist
-- [ ] **Completeness**: All 8 sections completed thoroughly
-- [ ] **Technical Accuracy**: All technical details verified
-- [ ] **Business Viability**: ROI calculation realistic
-- [ ] **Implementation Feasibility**: Timeline và resources realistic
-- [ ] **Professional Quality**: Writing và visuals professional-grade
-
-### Peer Review Process
-1. **Exchange**: Swap proposals với 1-2 peers
-2. **Review**: Provide detailed feedback using rubric
-3. **Discuss**: 30-minute discussion session
-4. **Iterate**: Incorporate feedback và improve
-
-### Mentor Review
-1. **Initial Submission**: Submit draft for initial feedback
-2. **Feedback Session**: 1-hour review meeting
-3. **Revision**: Address feedback và resubmit
-4. **Final Review**: Final approval meeting
-
----
-
----
-
-**🎯 Remember**: Your proposal should demonstrate not just technical knowledge, but also business acumen và strategic thinking. This is your opportunity to showcase your potential as a future cloud architect và business consultant!
-
----
-
-*Hướng dẫn này sẽ giúp bạn tạo ra một project proposal chất lượng cao, thể hiện được khả năng technical và business analysis của một cloud professional.*
+# Hướng dẫn triển khai server backend Spring Boot trên AWS với Docker
+
+## 1. Giới thiệu
+
+### Vấn đề
+
+Các doanh nghiệp vừa và nhỏ (SMEs) thường đối mặt với các thách thức khi sử dụng hạ tầng on-premises:
+
+- **Chi phí cao**: Khoảng $50,000/năm cho phần cứng và bảo trì.
+- **Thời gian triển khai lâu**: Mất khoảng 20 giờ để triển khai một ứng dụng mới.
+- **Khó mở rộng**: Hạ tầng on-premises thiếu linh hoạt khi nhu cầu tăng.
+- **Rủi ro bảo mật**: Khó đảm bảo các tiêu chuẩn bảo mật hiện đại.
+
+### Giải pháp
+
+Triển khai ứng dụng Spring Boot trên AWS sử dụng:
+
+- **Amazon EC2**: Chạy container và Nginx làm reverse proxy.
+- **Amazon RDS**: Cơ sở dữ liệu MySQL với Multi-AZ cho độ tin cậy 99.9%.
+- **Docker và Docker Compose**: Quản lý container.
+- **Docker Hub**: Lưu trữ Docker image thay vì Amazon ECR.
+- **Nginx**: Chuyển tiếp yêu cầu HTTP từ cổng 80 đến ứng dụng Spring Boot.
+
+### Lợi ích
+
+- **Tiết kiệm chi phí**: Giảm 64% chi phí (từ $50K/năm xuống $18K/năm).
+- **Tăng tốc triển khai**: Giảm thời gian triển khai 80% (từ 20 giờ xuống 4 giờ).
+- **Bảo mật và độ tin cậy**: Đáp ứng các tiêu chuẩn bảo mật và đảm bảo uptime cao.
+- **Khả năng mở rộng**: Dễ dàng chuyển sang ECS/EKS trong tương lai.
+
+### Chi phí
+
+| Thành phần | Chi phí hàng tháng (ước tính) |
+| --- | --- |
+| EC2 (t3.medium) | \~$16.37 |
+| RDS (db.t3.micro) | \~$18.25 |
+| Lưu trữ EBS, khác | \~$7.38 |
+| **Tổng cộng** | \~$42 |
+
+- **Chi phí phát triển một lần**: $2,000.
+- **Thời gian hoàn vốn (ROI)**: 4 tháng.
+
+### Kết quả mong đợi
+
+- Thời gian phản hồi API dưới 200ms.
+- Xử lý 1,000 yêu cầu đồng thời.
+- Hệ thống ổn định, dễ bảo trì và sẵn sàng mở rộng.
+
+## 2. Chuẩn bị ứng dụng
+
+Trước khi triển khai trên AWS, bạn cần chuẩn bị ứng dụng bằng cách clone mã nguồn từ GitHub, xây dựng Docker image, và đẩy lên Docker Hub.
+
+### 2.1. Clone project từ GitHub
+
+- **Yêu cầu**: Cài đặt Git trên máy tính (Hướng dẫn cài Git).
+- **Thực hiện**:
+
+  ```bash
+  git clone [invalid url, do not cite]
+  cd <repo_name>
+  ```
+
+  Thay `<username>/<repo_name>` bằng URL thực tế của repository trên GitHub.
+
+### 2.2. Xây dựng Docker image
+
+- **Yêu cầu**: Cài đặt Docker Desktop hoặc Docker CLI (Hướng dẫn cài Docker).
+- **Thực hiện**:
+  - Đảm bảo có file `Dockerfile` trong thư mục gốc của project. Ví dụ:
+
+    ```dockerfile
+    FROM openjdk:17-jdk-slim
+    WORKDIR /app
+    COPY target/*.jar app.jar
+    ENTRYPOINT ["java", "-jar", "app.jar"]
+    ```
+  - Xây dựng image:
+
+    ```bash
+    docker build -t my spring-boot-app .
+    ```
+
+### 2.3. Đẩy Docker image lên Docker Hub
+
+- **Yêu cầu**: Có tài khoản Docker Hub (Đăng ký tại).
+- **Thực hiện**:
+  - Đăng nhập vào Docker Hub:
+
+    ```bash
+    docker login
+    ```
+  - Gắn thẻ image:
+
+    ```bash
+    docker tag my spring-boot-app <dockerhub_username>/my spring-boot-app:latest
+    ```
+  - Đẩy image lên Docker Hub:
+
+    ```bash
+    docker push <dockerhub_username>/my spring-boot-app:latest
+    ```
+- **Lưu ý**: Giả định repository trên Docker Hub là public. Nếu private, cần cấu hình xác thực trên EC2 (xem mục 4.2).
+
+## 3. Triển khai hạ tầng AWS
+
+### 3.1. Chuẩn bị hạ tầng (Ngày 1)
+
+- **Tạo VPC**:
+  - Tạo Virtual Private Cloud với ít nhất 2 subnet public và 2 subnet private (Hướng dẫn VPC).
+- **Cấu hình Security Groups**:
+  - `ec2-sg`: Cho phép inbound traffic trên cổng 80 (HTTP) từ 0.0.0.0/0, cổng 22 (SSH) từ IP cụ thể.
+  - `rds-sg`: Chỉ cho phép kết nối từ `ec2-sg` trên cổng 3306 (MySQL).
+- **Tạo IAM Role**:
+  - Tạo role `CustomRWECRRole` với quyền tối thiểu cho EC2 và RDS (Hướng dẫn IAM).
+- **Tạo DB Subnet Group**:
+  - Đặt RDS trong subnet private (Hướng dẫn DB Subnet Group).
+
+### 3.2. Cung cấp EC2 và RDS (Ngày 3)
+
+- **EC2 Instance**:
+  - Type: `t3.medium`.
+  - OS: Ubuntu 24.04.
+  - Đặt trong subnet public với truy cập internet.
+  - Gắn IAM Role `CustomRWECRRole`.
+- **RDS Instance**:
+  - Type: `db.t3.micro`.
+  - Engine: MySQL.
+  - Lưu trữ: 20 GB General Purpose SSD.
+  - Multi-AZ: Enabled.
+  - Database: `first_cloud_users`.
+  - Lưu credentials trong AWS Secrets Manager (Hướng dẫn Secrets Manager).
+
+## 4. Triển khai ứng dụng trên AWS
+
+### 4.1. Cấu hình EC2 (Ngày 4)
+
+- **Cài đặt phần mềm**:
+
+  ```bash
+  sudo apt update
+  sudo apt install docker.io nginx mysql-client -y
+  sudo usermod -aG docker ubuntu
+  ```
+- **Cấu hình Nginx**:
+  - Tạo file `nginx.conf`:
+
+    ```nginx
+    server {
+        listen 80;
+        server_name # Your public IP
+        location / {
+            proxy_pass http://localhost:8080; # Your Spring Boot application URL
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection 'upgrade';
+            proxy_set_header Host $host;
+            proxy_cache_bypass $http_upgrade;
+        }
+    }
+    ```
+  - Copy và khởi động Nginx:
+
+    ```bash
+    sudo cp nginx.conf /etc/nginx/nginx.conf
+    sudo systemctl restart nginx
+    ```
+
+### 4.2. Kéo Docker image và chạy ứng dụng
+
+- **T。上 Docker Hub**:
+
+  - Tạo file `docker-compose.yml`:
+
+    ```yaml
+    version: '3'
+    services:
+      nginx:
+        image: nginx:latest
+        ports:
+          - "80:80"
+        volumes:
+          - ./nginx.conf:/etc/nginx/nginx.conf
+        depends_on:
+          - spring-boot-app
+      spring-boot-app:
+        image: <dockerhub_username>/my spring-boot-app:latest
+        ports:
+          - "8080:8080"
+        environment:
+          - SPRING_DATASOURCE_URL=jdbc:mysql://<rds_endpoint>:3306/first_cloud_usersទ
+          - SPRING_DATASOURCE_USERNAME=<db_username>
+          - SPRING_DATASOURCE_PASSWORD=<db_password>
+    ```
+  - Thay `<dockerhub_username>` và các thông tin RDS.
+  - Chạy ứng交叉
+
+  ```bash
+  docker compose up -d
+  ```
+
+- **Lưu ý về repository private**:
+
+  - Nếu repository là private, cần chạy `docker login` trên EC2 và cung cấp credentials.
+
+### 4.3. Kiểm tra và tối ưu (Ngày 5)
+
+- **Kiểm tra API**:
+  - Truy cập \`\[invalid url, do not cite\]
+  - Đảm bảo phản hồi API &lt; 200ms và xử lý 1,000 yêu cầu đồng thời.
+- **Kiểm tra tích hợp**:
+  - Sử dụng Testcontainers để kiểm tra kết nối RDS (Hướng dẫn Testcontainers).
+- **Kiểm tra hiệu suất**:
+  - Sử dụng JMeter để kiểm tra hiệu suất (\[Hướng dẫn JMeter\](https://jmeter.apache.org/ Juno)).
+- **Giám sát**:
+  - Thiết lập CloudWatch để giám sát logs và thiết lập cảnh báo (Hướng dẫn CloudWatch).
+- **Tối ưu hóa**:
+  - Kiểm tra và điều chỉnh cấu hình nếu cần.
+
+## 5. Bảo trì và các thực hành tốt nhất
+
+### 5.1. Backup và khôi phục
+
+- Thiết lập backup tự động cho RDS (Hướng dẫn RDS Backup).
+- \*\*Lưu ýწ
+- **Giám sát**:
+  - Sử dụng CloudWatch để giám sát logs và thiết lập cảnh báo.
+- **Cập nhật**:
+  - Cập nhật image mới, chạy:
+
+    ```bash
+    docker compose pull
+    docker compose up -d
+    ```
+
+### 5.2. Bảo mật
+
+- **Mã hóa dữ liệu**:
+  - Sử dụng EBS encryption cho EBS volumes (Hướng dẫn EBS Encryption).
+- **Sử dụng Secrets Manager**:
+  - Lưu trữ credentials trong Secrets Manager (Hướng dẫn Secrets Manager).
+- **Cập nhật ứng dụng**:
+  - Đẩy image mới lên Docker Hub và chạy lệnh trên.
+

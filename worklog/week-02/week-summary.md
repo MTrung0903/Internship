@@ -41,7 +41,6 @@
   - Giải quyết vấn đề: Xử lý lỗi cấu hình CloudFormation, SSH, DNS, và Security Groups.
   - Trực quan hóa kiến trúc qua sơ đồ draw.io và VPC Resource Map.
 
-## 🚧 Khó khăn và giải pháp
 
 
 ## 💭 Phản ánh và nhận xét
@@ -52,11 +51,8 @@
 - **Cần cải thiện**:
   - Tăng cường thực hành ngay sau lý thuyết để củng cố kiến thức.
   - Ghi lại thời gian chi tiết cho từng nhiệm vụ để quản lý hiệu quả.
-  - Tăng tương tác với mentor và cộng đồng AWS để học hỏi thêm.
-- **C VH nhận xét**:
-  - Security Groups và Network ACLs là hai lớp bảo mật bổ sung, cần cấu hình cẩn thận.
-  - CloudFormation giúp tự động hóa triển khai, giảm thiểu lỗi thủ công.
-  - EC2 cung cấp sự linh hoạt với nhiều Instance Type và AMI để triển khai nhanh.
+
+
 
 ## 📋 Kế hoạch tuần tới
 - **Ưu tiên**:
@@ -92,7 +88,7 @@
 - Đọc trước tài liệu về User Data, Metadata, và Auto Scaling.
 - Lên lịch trao đổi với mentor để thảo luận về Module 03.
 
-**🎯 Tiến độ tuần**: Hoàn thành 100% Module 02, bắt đầu Module 03 (20% hoàn thành).
+**🎯 Tiến độ tuần**: Hoàn thành  Module 02, bắt đầu Module 03 .
 
 ---
 *Week summary created by: Hồ Minh Trung*  
