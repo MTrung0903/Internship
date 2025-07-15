@@ -26,7 +26,6 @@ Workshop này được thiết kế để hướng dẫn các lập trình viên
 **Chi phí dự kiến:**
 
 - **Hạ tầng AWS**: Gần như miễn phí trong Free Tier (EC2 `t3.medium`, RDS `db.t3.micro`, ECR).
-- **Chuẩn bị workshop**: \~$500 cho thời gian giảng viên và tài liệu.
 - **Thời gian**: Workshop kéo dài một ngày với các bài thực hành.
 
 **Kết quả mong đợi:**
@@ -60,13 +59,10 @@ Việc triển khai ứng dụng Spring Boot lên môi trường sản xuất, �
 
 Nếu không thành thạo triển khai trên cloud:
 
-- Ứng dụng tiếp tục chạy trên hạ tầng on-premises, tốn chi phí (\~$50K/năm) và khó mở rộng.
+- Ứng dụng tiếp tục chạy trên hạ tầng on-premises, tốn chi phí  và khó mở rộng.
 - Lập trình viên mất thời gian vào các quy trình thủ công, giảm năng suất.
-- Doanh nghiệp bỏ lỡ xu hướng cloud-first, với 85% doanh nghiệp áp dụng vào năm 2025 (Gartner 2024).
+- Doanh nghiệp bỏ lỡ xu hướng hiện đại.
 
-## Market Opportunity
-
-Theo Gartner 2024, thị trường điện toán đám mây dự kiến đạt 1.2 nghìn tỷ USD vào năm 2027. Việc thành thạo triển khai ứng dụng Spring Boot trên AWS với Docker giúp lập trình viên đáp ứng nhu cầu ngày càng tăng về các giải pháp container hóa và cloud-native, nâng cao khả năng cạnh tranh và giảm chi phí vận hành.
 
 ---
 
@@ -219,7 +215,6 @@ Workshop được chia thành các mô-đun thực hành trong một ngày:
 
 
 ## Buffer Time
-
 - 30 phút dự phòng cho các vấn đề như lỗi kết nối hoặc cấu hình sai.
 
 ---
@@ -325,7 +320,7 @@ Workshop được chia thành các mô-đun thực hành trong một ngày:
 
 ## C. Architecture Diagrams
 
-![architecture-diagram](./proposal-pic-01.png)
+![architecture-diagram](../blog-translation/image/proposal-pic-01.png)
 
 ## D. References
 

@@ -11,9 +11,9 @@
 > 
 > **🌐 Nguồn**: AWS Artificial Intelligence Blog
 > 
-> **👨‍💻 Người dịch**: [Hồ Minh Trung] - FCJ Train
+> **👨‍💻 Người dịch**: [Hồ Minh Trung] - FCJ 
 > 
-> **📅 Ngày dịch**: 09/07/2025
+> **📅 Ngày dịch**: 13/07/2025
 > 
 > **⏱️ Thời gian đọc**: 15 phút
 > 
@@ -21,6 +21,8 @@
 ---
 
 ## 📋 Tóm tắt
+
+Bài viết trình bày cách xây dựng trợ lý AI đa phương thức sử dụng Amazon Nova và Amazon Bedrock Data Automation để xử lý dữ liệu đa dạng như văn bản, hình ảnh, âm thanh. Trung tâm là Amazon Nova Pro, một mô hình ngôn ngữ lớn, điều phối luồng công việc agentic, kết hợp với Amazon Bedrock để trích xuất và phân tích dữ liệu. Giải pháp minh họa qua trợ lý AI quản lý tài chính, phân tích báo cáo thu nhập và slide thuyết trình, áp dụng các kỹ thuật như Retrieval Augmented Generation (RAG), điều phối đa công cụ, và định tuyến có điều kiện với LangGraph. Bài viết cũng thảo luận lợi ích của Amazon Bedrock trong việc xây dựng hệ thống AI mở rộng, các tùy chỉnh linh hoạt, và ứng dụng trong tài chính, y tế, sản xuất
 
 **🎯 Đối tượng đọc**: Nhà phát triển AI/ML, kiến trúc sư doanh nghiệp, kỹ sư DevOps
 
@@ -225,13 +227,19 @@ Giải pháp được trình bày trong notebook mẫu [BDA_nova_agentic](https:
 
 ### Về các tác giả
 
+![julia-hu](./image/juliahu.png)
+
 **Julia Hu**
 
 Julia Hu là Kiến trúc sư Giải pháp AI/ML Cấp cao tại Amazon Web Services, hiện đang tập trung vào đội ngũ Amazon Bedrock. Chuyên môn cốt lõi của cô nằm ở AI agentic, nơi cô khám phá khả năng của các mô hình nền tảng và agent AI để nâng cao năng suất trong các ứng dụng AI tạo sinh. Với nền tảng về AI tạo sinh, Khoa học Dữ liệu Ứng dụng, và kiến trúc IoT, cô hợp tác với khách hàng – từ các công ty khởi nghiệp đến các doanh nghiệp lớn – để thiết kế và triển khai các giải pháp AI mang lại tác động.
 
+![rui-cardoso](./image/rui-cardoso-aws-2.jpeg)
+
 **Rui Cardoso**
 
 Rui Cardoso là kiến trúc sư giải pháp đối tác tại Amazon Web Services (AWS). Anh tập trung vào AI/ML và IoT, làm việc với các Đối tác AWS và hỗ trợ họ phát triển các giải pháp trên AWS. Khi không làm việc, anh thích đạp xe, đi bộ đường dài và học hỏi những điều mới.
+
+![jessie-lee-fry](./image/Jessie-Lee-Fry.jpg)
 
 **Jessie-Lee Fry**
 
@@ -272,9 +280,9 @@ Jessie-Lee Fry là một giám đốc điều hành Chiến lược Sản phẩm
 
 ### Tools và Services
 
-- [Amazon Nova](https://aws.amazon.com/nova/): Mô hình ngôn ngữ đa phương thức.
-- [Amazon Bedrock](https://aws.amazon.com/): Nền tảng AI tạo sinh.
-- [LangGraph](https://github.com/langgraph): Framework điều phối quy trình AI.
+- **Amazon Nova**: Mô hình ngôn ngữ đa phương thức.
+- **Amazon Bedrock**: Nền tảng AI tạo sinh.
+- **LangGraph**: Framework điều phối quy trình AI.
 
 ---
 
