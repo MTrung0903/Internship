@@ -2,7 +2,7 @@
 
 # Xây dựng trợ lý AI đa phương thức với Amazon Nova và Amazon Bedrock Data Automation
 
-> 📖 Bài viết gốc: Build an agentic multimodal AI assistant with Amazon Nova and Amazon Bedrock Data Automation
+> 📖 Bài viết gốc: [Build an agentic multimodal AI assistant with Amazon Nova and Amazon Bedrock Data Automation](https://aws.amazon.com/vi/blogs/machine-learning/build-an-agentic-multimodal-ai-assistant-with-amazon-nova-and-amazon-bedrock-data-automation/)
 > 
 > 
 > **👤 Tác giả**: Julia Hu, Jessie-Lee Fry, Rui Cardoso
@@ -269,9 +269,6 @@ Jessie-Lee Fry là một giám đốc điều hành Chiến lược Sản phẩm
 ### Tài liệu gốc
 
 - [Original Article](https://aws.amazon.com/vi/blogs/machine-learning/build-an-agentic-multimodal-ai-assistant-with-amazon-nova-and-amazon-bedrock-data-automation/)
-- [AWS Artificial Intelligence Blog](https://aws.amazon.com/blogs/ai/)
-- [AWS Documentation VN](https://aws.amazon.com/vi/)
-- [AWS Vietnam Community](https://aws.amazon.com/community/)
 
 ### Tools và Services
 
@@ -281,21 +278,7 @@ Jessie-Lee Fry là một giám đốc điều hành Chiến lược Sản phẩm
 
 ---
 
-## 💬 Ghi chú của người dịch
 
-### Challenges trong quá trình dịch
-
-- **Technical Terms**: Các thuật ngữ như “agentic workflow” hoặc “multimodal RAG” chưa phổ biến trong tiếng Việt, cần giải thích rõ ràng và nhất quán.
-- **Cultural Context**: Ví dụ về ngành rideshare (XXX) được giữ nguyên do không có tương đương trực tiếp tại Việt Nam.
-- **Complex Concepts**: Quy trình agentic và LangGraph đòi hỏi nghiên cứu sâu để diễn giải chính xác.
-
-### Insights gained
-
-- **Technical Learning**: Hiểu hiểu sâu hơn về AI đa phương thức và quy trình agentic.
-- **Language Skills**: Cải thiện kỹ năng dịch thuật kỹ thuật, đặc biệt trong việc giữ giọng văn tự nhiên.
-- **Industry Knowledge**: Nắm bắt xu hướng ứng dụng AI trong tài chính, y tế, sản xuất.
-
----
 
 ## 🤝 Đóng góp và Feedback
 
@@ -309,4 +292,4 @@ Bài dịch được thực hiện trong khuôn khổ **FCJ Internship Program**
 
 ---
 
-*© 2025 - Bản dịch thuộc về [Hồ Minh Trung]. Vui lòng ghi nguồn khi sử dụng.*
+*© 2025 - Bản dịch thuộc về [Hồ Minh Trung]*
